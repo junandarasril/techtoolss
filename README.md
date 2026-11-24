@@ -12,6 +12,17 @@ python3 -m http.server 3000
 # lalu buka http://localhost:3000
 ```
 
+## Versi satu file (offline)
+
+`techtools-aceh.html` (sekitar 2,8 MB) adalah versi mandiri: CSS, JavaScript, ikon, dan
+18 foto sudah tertanam sebagai base64. Cukup unduh satu berkas itu lalu buka langsung —
+tanpa server, tanpa folder `assets/`, termasuk lewat `file://`. Data tetap disimpan di
+`localStorage` per browser. Manifest PWA dilepas dari versi ini karena instalasi PWA
+memerlukan berkas manifest terpisah; gunakan versi multi-berkas (`index.html`) untuk PWA.
+
+Versi satu file adalah salinan hasil build dari sumber di `css/` dan `js/`, jadi setelah
+mengubah sumber, berkas ini perlu dibuat ulang agar isinya ikut berubah.
+
 ## Deploy (Vercel)
 
 Proyek ini situs statis, bukan aplikasi Next.js. `vercel.json` mengunci Framework Preset ke
@@ -68,5 +79,6 @@ js/app.js                # routing hash, katalog, detail produk, login/registras
 js/dashboard.js          # dashboard penjual & admin, form produk/penjual/kategori
 manifest.webmanifest     # metadata PWA
 vercel.json              # konfigurasi deploy statis (framework: null)
+techtools-aceh.html      # versi satu berkas (CSS, JS, foto tertanam base64)
 assets/icon.svg          # ikon aplikasi
 ```
