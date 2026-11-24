@@ -1,0 +1,20 @@
+{
+  "name": "TechTools Aceh — Marketplace Peralatan Teknisi",
+  "short_name": "TechTools Aceh",
+  "description": "Katalog peralatan teknisi servis smartphone dan laptop dari toko lokal Aceh.",
+  "lang": "id",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#171717",
+  "theme_color": "#171717",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
